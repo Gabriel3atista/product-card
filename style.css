@@ -1,0 +1,276 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #111122;
+  font-family: "Poppins", sans-serif;
+}
+
+.content {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content .card {
+  position: relative;
+  width: 420px;
+  height: 600px;
+  border-radius: 20px;
+  background-color: white;
+  overflow: hidden;
+}
+
+.content .card:hover .curve {
+  -webkit-transform: translate(57px, -127px) rotate(66deg);
+          transform: translate(57px, -127px) rotate(66deg);
+  width: 435px;
+}
+
+.content .card:hover .jordan {
+  top: 60px;
+  left: 110px;
+  width: 250px;
+  -webkit-transform: rotate(31deg);
+          transform: rotate(31deg);
+}
+
+.content .card:hover .logo {
+  top: 200px;
+  width: 250px;
+}
+
+.content .card:hover .options {
+  opacity: 100%;
+  top: 380px;
+}
+
+.content .card .curve {
+  position: absolute;
+  top: -74px;
+  left: -50px;
+  border-radius: 20px 0 0 0;
+  width: 360px;
+  z-index: 1;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.content .card .jordan {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  width: 300px;
+  z-index: 2;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.content .card .logo {
+  position: absolute;
+  top: 300px;
+  left: 54.5%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  width: 300px;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.content .card .options {
+  position: absolute;
+  top: 530px;
+  opacity: 0%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.content .card .options .colors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.content .card .options .colors .colors-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content .card .options .colors .colors-options span {
+  width: 25px;
+  height: 25px;
+  margin: 0 10px;
+  border-radius: 4px;
+  -webkit-transition: .1s ease-in-out;
+  transition: .1s ease-in-out;
+  cursor: pointer;
+}
+
+.content .card .options .colors .colors-options span:nth-child(1) {
+  background-color: rgba(255, 200, 0, 0.5);
+}
+
+.content .card .options .colors .colors-options span:nth-child(1):hover {
+  background-color: #ffc800;
+}
+
+.content .card .options .colors .colors-options span:nth-child(2) {
+  background-color: rgba(250, 75, 72, 0.5);
+}
+
+.content .card .options .colors .colors-options span:nth-child(2):hover {
+  background-color: #fa4b48;
+}
+
+.content .card .options .colors .colors-options span:nth-child(3) {
+  background-color: rgba(68, 168, 212, 0.5);
+}
+
+.content .card .options .colors .colors-options span:nth-child(3):hover {
+  background-color: #44a8d4;
+}
+
+.content .card .options .colors .colors-options span:nth-child(4) {
+  background-color: rgba(126, 208, 67, 0.5);
+}
+
+.content .card .options .colors .colors-options span:nth-child(4):hover {
+  background-color: #7ed043;
+}
+
+.content .card .options .sizes .sizes-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content .card .options .sizes .sizes-options span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 25px;
+  height: 25px;
+  margin: 0 10px 0 0;
+  border-radius: 4px;
+  -webkit-transition: .1s ease-in-out;
+  transition: .1s ease-in-out;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.03);
+  color: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.content .card .options .sizes .sizes-options span:hover {
+  background-color: #ffc800;
+  color: white;
+}
+
+.content .card .options .buy-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin-top: 50px;
+  padding: 0 30px;
+}
+
+.content .card .options .buy-options .prices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content .card .options .buy-options .prices .main-price {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.content .card .options .buy-options .prices .promotion-price {
+  color: #cacaca;
+  text-decoration: line-through;
+}
+
+.content .card .options .buy-options .favorite {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.content .card .options .buy-options button {
+  width: 150px;
+  height: 50px;
+  background-color: #ffc800;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.content .card .options .buy-options button:hover {
+  background-color: #eeba00;
+}
+/*# sourceMappingURL=style.css.map */
